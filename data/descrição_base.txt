@@ -1,0 +1,66 @@
+1. Title: Base de Dados de candidatos de GoT para o PS-DS iALL 2020
+
+2. Sources: 
+	(a) valores sintetizados a partir de perfis preenchidos pelos candidatos do processo seletivo. 
+	(b) Essa base de dados é sintética, gerada única e exclusivamente para aprendizado em Machine Learning.  
+
+3. Past Usage:
+	Not yet! 
+
+4. Relevant Information Paragraph:
+	Descrição dos atributos:
+        'id_candidato' [0]: 'identificação da pessoa no processo seletivo',
+         'nome': 'nome do candidato',
+         'idade': 'idade do candidato',
+         'grande_vitoria': 'Mora na grande vitória (True) ou não mora na grande vitória (False)',
+         'trab_presencial': 'Trabalho presencial (True) ou apenas remoto (False)',
+         'horas_estagio': 'Disponibilidade para trabalhar 30 h ou 20h ',
+         'turno_estagio': "Disponibilidadee para trabalhar em qualquer turno (Full) ou se possui restrições de horarios ('restrito') ",
+         'ingles_leitura': 'proficiência na leitura em ingles: (F)luente, (A)vançado, (I)ntermed., (B)ásico',
+         'ingles_escrita': 'proficiência na escrita em ingles: (F)luente, (A)vançado, (I)ntermed., (B)ásico',
+         'ingles_conversa': 'proficiência na conversacao em ingles: (F)luente, (A)vançado, (I)ntermed., (B)ásico',
+         'ingles_vivencia_ext': 'tempo máximo de experiência no exterior',
+         'titulacao': 'candidato está realizando graduação ou pós graduação',
+         'curso': 'afinidade do curso do candidato com a área de Dados. A: muita afinidade, B: afinidade, C: pouca afinidade',
+         'primeira_graduacao': 'candidato que realiza primeira graduação (True) ou não (False)',
+         'previsao_formacao': 'Pretensão de formatura do candidato',
+         'progresso_curso': 'percentual do curso concluído',
+         'estagio_DS': "Possui nenhum  ('0'), um  ('1'), ou mais de 1 ('>1') estágio em DS",
+         'IC': "Possui IC em DS concluida ('Concluido'), está fazendo IC em DS ('Fazendo'), ou não possui IC em DS  ('Não')",
+         'TCC': "Possui TCC em DS concluida ('Concluido'), está fazendo TCC em DS ('Fazendo'), ou não possui TCC em DS  ('Não')",
+         'ferramentas' [colunas 19 a 43]: 'Afinidade do candidato com a ferramenta em questão ',
+         'Algoritmos' [colunas 44 a 56]: 'Afinidade do candidato com o algoritmo em questão'
+ 
+
+5. Number of Instances: 52
+
+6. Number of Attributes: 56
+
+7. Attribute Values:
+        'id_candidato': 'discreto',
+         'nome': 'texto',
+         'idade': 'discreto',
+         'grande_vitoria': 'True, False',
+         'trab_presencial': 'True, False',
+         'horas_estagio': '30h, 20h',
+         'turno_estagio': 'full, restrito',
+         'ingles_leitura': 'F, A, I, B',
+         'ingles_escrita': 'F, A, I, B',
+         'ingles_conversa': 'F, A, I, B',
+         'ingles_vivencia_ext': "'0meses','6meses','12meses','>12meses'",
+         'titulacao': 'graduacao, pos',
+         'curso': 'A, B, C',
+         'primeira_graduacao': 'True, False',
+         'previsao_formacao': "'>2022/2','2020/2','2021/1','2022/1','2022/2'",
+         'progresso_curso': "'2/3','1/3','0/3'",
+         'estagio_DS': "'0','1','>1'",
+         'IC': "'Concluido','Fazendo','Não'",
+         'TCC': "'Concluido','Fazendo','Não'",
+         'Ferramentas' [colunas 19 a 43]: "'Tenho_domínio','Já_trabalhei','Já_ouvi_Falar','Nunca_nem_vi'",
+         'Algoritmos'[colunas 44 a 56]: "'Desenvolvi_grandes_projetos_com_isso,'Apliquei_em_algum_trabalho,'Só_estudei_nunca_apliquei,'Nunca_estudei_e_nunca_apliquei"
+
+
+8. Missing Attribute Values: 6
+
+9. Class Distribution: 19 amostras APROVADAS == TRUE e 29 amostras APROVADAS == FALSE e 6 amostras com classes faltantes
+
